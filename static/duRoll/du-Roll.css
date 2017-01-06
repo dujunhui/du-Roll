@@ -1,0 +1,75 @@
+ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.du-RollBox{
+    width: 520px;
+    height: 280px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*图片box*/
+.du-ImgBox{
+    height: 280px;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+}
+.du-ImgBox li{
+    display: none;
+}
+
+/*点box*/
+.du-PointBox{
+    position: absolute;
+    left: 50%;
+    margin-left: -39px;
+    bottom: 15px;
+}
+.du-PointBox li{
+    float: left;
+    margin: 2px;
+}
+.du-PointBox li a{
+    display: block;
+    padding-top: 9px;
+    width: 9px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #B7B7B7;
+    font-size: 0px;
+}
+.du-PointBox .active a{
+    background-color: #F40;
+}
+
+/*箭头box*/
+.du-ArrowsBox{
+    display: none;
+}
+.du-ArrowsBox .du-ArrIcon{
+    background: url("../img/arrow.png") no-repeat;
+}
+.du-ArrowsBox .du-Arrow{
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    opacity: .5;
+}
+.du-ArrowsBox .du-Arrow:hover{
+    opacity: 1;
+}
+.du-ArrowsBox .du-Prev{
+    background-position: 0 0;
+    left: 5px;
+    top: 120px;
+}
+.du-ArrowsBox .du-Next{
+    right: 5px;
+    top: 120px;
+    background-position: 0 -40px;
+}

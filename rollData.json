@@ -1,0 +1,30 @@
+{
+  "items":[
+    {
+      "src":"./static/img/1.jpg",
+      "href":"javascript:;",
+      "alt":"图片1"
+    },
+    {
+      "src":"./static/img/2.jpg",
+      "href":"javascript:;",
+      "alt":"图片2"
+    },
+    {
+      "src":"./static/img/3.jpg",
+      "href":"javascript:;",
+      "alt":"图片3"
+    },
+    {
+      "src":"./static/img/4.jpg",
+      "href":"javascript:;",
+      "alt":"图片4"
+    },
+    {
+      "src":"./static/img/5.jpg",
+      "href":"javascript:;",
+      "alt":"图片5"
+    }
+  ],
+  "count":5
+}
