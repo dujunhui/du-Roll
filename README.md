@@ -22,12 +22,12 @@
        }
    })
 
-   seajs.use("../static/duRoll/du-Roll-dom",function(ex){
+   seajs.use("../static/duRoll/du-Roll",function(ex){
        //加载css，动态加载数据并渲染dom
        ex.dom('myRollBox');
 
        // 加载duRoll事件
-       seajs.use("../static/duRoll/du-Roll",function(DuRoll){
+       seajs.use("../static/duRoll/du-Roll-Ev",function(DuRoll){
            var roll = new DuRoll('myRollBox');
            roll.init({
                index:0,
