@@ -3,7 +3,10 @@ ol,ul{
     padding: 0;
     list-style: none;
 }
-
+img{
+    border-style:none;
+    vertical-align: top;
+}
 .du-RollBox{
     width: 520px;
     height: 280px;

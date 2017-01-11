@@ -1,16 +1,12 @@
 <ul class="du-ImgBox">
-    <!--<li><a href="javascript:;"><img src="../static/img/1.jpg" alt=""/></a></li>-->
-    <!--<li><a href="javascript:;"><img src="../static/img/2.jpg" alt=""/></a></li>-->
-    <!--<li><a href="javascript:;"><img src="../static/img/3.jpg" alt=""/></a></li>-->
-    <!--<li><a href="javascript:;"><img src="../static/img/4.jpg" alt=""/></a></li>-->
-    <!--<li><a href="javascript:;"><img src="../static/img/5.jpg" alt=""/></a></li>-->
+    {{#each items}}
+    <li><a href="{{href}}"><img src="{{src}}" alt="{{alt}}"/></a></li>
+    {{/each}}
 </ul>
 <ol class="du-PointBox">
-    <!--<li><a href="javascript:;">1</a></li>-->
-    <!--<li><a href="javascript:;">2</a></li>-->
-    <!--<li><a href="javascript:;">3</a></li>-->
-    <!--<li><a href="javascript:;">4</a></li>-->
-    <!--<li><a href="javascript:;">5</a></li>-->
+    {{#each items}}
+        <li><a href="javascript:;">{{@index}}</a></li>
+    {{/each}}
 </ol>
 <div class="du-ArrowsBox">
     <a href="javascript:;" class="du-Prev du-Arrow du-ArrIcon"></a>

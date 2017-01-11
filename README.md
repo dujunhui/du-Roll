@@ -18,7 +18,7 @@
 ```javascript
    seajs.config({
        alias: {
-           "jquery": "jquery-1.10.1.js"
+           "jquery": "jquery-seajs-1.10.1.js"
        }
    })
 
