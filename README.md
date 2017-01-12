@@ -4,10 +4,6 @@
 ```html
     <div id="myRollBox" class="du-RollBox"></div>
 ```
-- css
-```html
-    <link rel="stylesheet" href="css/du-Roll.css"/>
-```
 - js
 ```html
     <script src="../sea-modules/sea.js"></script>
@@ -18,16 +14,17 @@
 ```javascript
    seajs.config({
        alias: {
-           "jquery": "jquery-seajs-1.10.1.js"
+           "jquery": "jquery-seajs-1.10.1.js",
+           "handlebars":"handlebars.seajs.min.js"
        }
    })
 
-   seajs.use("../static/duRoll/du-Roll",function(ex){
-       //加载css，动态加载数据并渲染dom
+   seajs.use("./static/duRoll/du-Roll",function(ex){
+       //加载css，加载json数据并渲染dom
        ex.dom('myRollBox');
 
        // 加载duRoll事件
-       seajs.use("../static/duRoll/du-Roll-Ev",function(DuRoll){
+       seajs.use("./static/duRoll/du-Roll-Ev",function(DuRoll){
            var roll = new DuRoll('myRollBox');
            roll.init({
                index:0,
